@@ -13,3 +13,13 @@ function donationStringtoNum(id){
 
     return Flood_Qouta_Donation ;
 }
+
+
+
+
+function getHiddenById(id){
+    document.getElementById('Flood-Donation-form').classList.add('hidden')
+    document.getElementById('Transaction-form').classList.add('hidden')
+
+    document.getElementById(id).classList.remove('hidden')
+}

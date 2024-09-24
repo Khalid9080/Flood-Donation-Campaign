@@ -1,4 +1,10 @@
 
+// document.getElementById('btn-history').addEventListener('click', function(){
+//     window.location.href='./transaction.html';
+    
+// })
+
+
 //Noakhali Donation
 document.getElementById('btn1-donate-noakhali').addEventListener('click', function (event) {
     event.preventDefault();
@@ -11,6 +17,8 @@ document.getElementById('btn1-donate-noakhali').addEventListener('click', functi
     }
     else {
         document.getElementById('donation-balance').innerText = newBalance;
+        
+
     }
 
 
@@ -23,7 +31,7 @@ document.getElementById('btn2-donate-feni').addEventListener('click', function (
     const balance = donationTextStringtoNum('donation-balance')
     const feniBalance = donationStringtoNum('feni-donation')
     const newBalance = balance + feniBalance;
-    if (feniBalance < 0) {
+    if (feniBalance < 0 ) {
         alert(' Negative Value will not be accepted')
     }
     else {
@@ -50,3 +58,5 @@ document.getElementById('btn3-donate-quotaMovement').addEventListener('click', f
 
 
 })
+
+

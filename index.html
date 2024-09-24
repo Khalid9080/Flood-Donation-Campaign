@@ -38,11 +38,11 @@
  
     <main>
         <div class="flex justify-center space-x-3 mt-4">
-            <button class="btn bg-[#B4F461]"><b>Donation</b></button>
-            <button class="btn btn-outline px-5">History</button>
+            <button id="btn-donation" class="btn bg-[#B4F461]"><b>Donation</b></button>
+            <button id="btn-history" class="btn btn-outline px-5">History</button>
         </div>
 
-        <section class=" mt-4 space-y-7 mb-10">
+        <section id="Flood-Donation-form" class=" mt-4 space-y-7 mb-10 ">
 
 
             <div class="hero ">
@@ -50,7 +50,7 @@
                     class="hero-content flex-col lg:flex-row-reverse justify-end border border-1 rounded-xl shadow-1xl  w-5/6 p-5">
                     <div class="text-center lg:text-left ">
 
-                        <button class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">0 BDT</button>  
+                        <button id="noakhali-balance" class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">10000 BDT</button>  
 
 
                         <h1 class="text-2.5xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -82,7 +82,7 @@
                     class="hero-content flex-col lg:flex-row-reverse justify-end border border-1 rounded-xl shadow-1xl  w-5/6 p-5">
                     <div class="text-center lg:text-left ">
 
-                        <button class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">600 BDT</button>
+                        <button id="feni-balance" class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">600 BDT</button>
 
 
                         <h1 class="text-2.5xl font-bold mb-2">Donate for Flood at Feni, Bangladesh</h1>
@@ -112,7 +112,7 @@
                 <div class="hero-content flex-col lg:flex-row-reverse justify-end border border-1 rounded-xl shadow-1xl  w-5/6 p-5 ">
                     <div class="text-center lg:text-left ">
 
-                        <button class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">2400 BDT</button>
+                        <button id="qouta-balance" class="btn btn-sm mb-2"><img src="assets/coin.png" alt="">2400 BDT</button>
 
 
                         <h1 class="text-2.5xl font-bold mb-2">Aid for Injured in the Quota Movement</h1>
@@ -138,9 +138,29 @@
 
         </section>
 
+        <section id="Transaction-form" class=" mt-4 space-y-7 mb-10 hidden">
+            <div class="hero ">
+                
+                <div id="transaction-donate" class=" border border-1 rounded-xl shadow-2xl text-lg font-bold w-5/6 p-5 ">
+
+                    <!-- <h1 class="text-2.5xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h1> -->
+                     
+                  
+                </div>
+                
+                        
+                
+            </div>
+
+        </section>
+
     </main>
 <script src="JS/addDonation.js"></script>
 <script src="JS/Utilities.js"></script>
+<script src="JS/My_Balance.js"></script>
+<script src="JS/transaction.js"></script>
+
+
 </body>
 
 </html>

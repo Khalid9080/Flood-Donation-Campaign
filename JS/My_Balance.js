@@ -20,22 +20,22 @@ document.getElementById('btn1-donate-noakhali').addEventListener('click', functi
         newBalance==0
         document.getElementById('noakhali-balance').innerText = newBalance+' BDT';
 
-        // Create a new div container for this transaction
+       
         const NoakhaliDiv = document.createElement('div');
         NoakhaliDiv.classList.add('border', 'border-1', 'rounded-xl', 'shadow-1xl', 'p-5', 'mt-4');
 
-        // Create a paragraph for the donation message
+        
         const p = document.createElement('p');
         p.innerText = `${Noakhali_donation} Tk is donated for Flood Relief in Noakhali,Bangladesh. Your current balance is: ${newBalance} Tk.`;
         NoakhaliDiv.appendChild(p);
 
-        // Create a paragraph for the timestamp
+       
         const time = document.createElement('p');
         time.innerText = `${new Date().toString()}`;
         time.classList.add('text-sm', 'text-gray-500');
         NoakhaliDiv.appendChild(time);
 
-        // Append the new transaction section to the main container
+        
         document.getElementById('transaction-donate').appendChild(NoakhaliDiv);
     }
 });
@@ -61,22 +61,22 @@ document.getElementById('btn2-donate-feni').addEventListener('click', function (
         newBalance==0
         document.getElementById('feni-balance').innerText = newBalance + ' BDT';
 
-        // Create a new div container for this transaction
+        
         const FeniDiv = document.createElement('div');
         FeniDiv.classList.add('border', 'border-1', 'rounded-xl', 'shadow-1xl', 'p-5', 'mt-4');
 
-        // Create a paragraph for the donation message
+       
         const p = document.createElement('p');
         p.innerText = `${Feni_donation} Tk is donated for Flood Relief in Feni,Bangladesh. Your current balance is: ${newBalance} Tk.`;
         FeniDiv.appendChild(p);
 
-        // Create a paragraph for the timestamp
+       
         const time = document.createElement('p');
         time.innerText = `${new Date().toString()}`;
         time.classList.add('text-sm', 'text-gray-500');
         FeniDiv.appendChild(time); 
 
-        // Append the new transaction section to the main container
+        
         document.getElementById('transaction-donate').appendChild(FeniDiv);
     }
 });
@@ -108,18 +108,18 @@ document.getElementById('btn3-donate-quotaMovement').addEventListener('click', f
         const QuotaDiv = document.createElement('div');
         QuotaDiv.classList.add('border', 'border-1', 'rounded-xl', 'shadow-1xl', 'p-5', 'mt-4');
 
-        // Create a paragraph for the donation message
+        
         const p = document.createElement('p');
         p.innerText = `${Feni_donation} Tk is donated for Quota Movement of Bangladesh. Your current balance is: ${newBalance} Tk.`;
         QuotaDiv.appendChild(p);
 
-        // Create a paragraph for the timestamp
+        
         const time = document.createElement('p');
         time.innerText = `${new Date().toString()}`;
         time.classList.add('text-sm', 'text-gray-500');
         QuotaDiv.appendChild(time); 
 
-        // Append the new transaction section to the main container
+       
         document.getElementById('transaction-donate').appendChild(QuotaDiv);
     }
 

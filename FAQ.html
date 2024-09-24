@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Donation Campaingn</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa9695105b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-------------------------- Navbar Start ------------------>
+
+    <nav class="sticky top-0 backdrop-blur-sm z-50 bg-white bg-opacity-75 shadow-sm">
+        <section class="navbar bg-orange-50 flex justify-between px-32 py-8 flex-col md:flex-row">
+            <a href="index.html"><button class="btn bg-[#B4F461] px-8 mb-10 text-xl"><b>Home</b></button></a>
+
+
+            <div class="space-x-3 mb-10 text-2xl font-bold ">
+                <img src="../assets/logo.png" alt="">
+                <h1><b>Donate Bangladesh</b></h1>
+            </div>
+
+            <div class="space-x-1 mb-10">
+                <img src="../assets/coin.png" alt="">
+                <h1 id="donation-balance" class="text-neutral-600 text-lg font-bold">5500</h1>
+                <h1 class="text-neutral-600 text-lg font-bold">BDT</h1>
+            </div>
+        </section>
+
+
+    </nav>
+    <main class="hero mt-10">
+        <section class="hero-content w-5/6 flex flex-col ">
+            <div>
+                <h1 class="text-3xl font-bold justify-start">Important FAQ <i class="fa-regular fa-comments"></i></h1>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium ">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content ">
+                    <p >The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        structure of a webpage as a tree of objects, where each node is an element (such as HTML tags)
+                        or piece of content (such as text). Through the DOM, programming languages like JavaScript can
+                        interact with and manipulate the content, structure, and style of a webpage dynamically.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM, you typically use JavaScript methods. Here are some common
+                        ways to select elements:
+
+                        1. getElementById()
+                        2. getElementsByClassName()
+                        3. getElementsByTagName()
+                        4. querySelector()
+                        5. querySelectorAll()
+
+                        Example of Using CSS Selectors:
+                        By ID: #elementId
+                        By Class: .className
+                        By Tag: tagName
+                        Combined: div.className (selects div elements with a specific class)
+                        These methods provide flexibility for selecting elements in various ways depending on the
+                        structure of your HTML.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM,
+                    and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>
+                        Event delegation is a technique in JavaScript that allows you to manage events efficiently by
+                        assigning a single event listener to a parent element instead of adding individual listeners to
+                        multiple child elements. This is especially useful in dynamic web applications where elements
+                        might be added or removed from the DOM after the page has initially loaded.
+
+                        How Event Delegation Works:
+                        Event Bubbling: When an event occurs on a child element, it "bubbles up" the DOM tree to its
+                        ancestors (i.e., parent, grandparent, etc.). This means that if you attach an event listener to
+                        a parent element, it can capture events from its children as well.
+
+                        Listening at a Higher Level: Instead of attaching separate event listeners to each child
+                        element, you attach one listener to a common parent element. When an event is triggered on a
+                        child, the event bubbles up to the parent, and you can detect which child triggered the event
+                        using the event.target property.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's atribute and styes
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>You can manipulate an element's attributes and styles using the DOM by interacting with various
+                        properties and methods provided by the JavaScript API. Here's how you can do it:
+
+                        1. Manipulating Attributes
+                        Get an Attribute
+                        To retrieve the value of an attribute from an element, you can use the getAttribute() method.
+                        2. Manipulating Styles
+                        Inline Style with the style Property
+                        To change or add inline styles directly to an element, use the style property. You can modify
+                        individual CSS properties.
+                        3. Example: Putting It All Together
+                        In this example:
+
+                        Clicking the button changes the src and alt attributes of the image.
+                        It also modifies the image's inline styles by adjusting the border and width.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -23,3 +23,5 @@ function getHiddenById(id){
 
     document.getElementById(id).classList.remove('hidden')
 }
+
+

@@ -13,7 +13,7 @@ document.getElementById('btn1-donate-noakhali').addEventListener('click', functi
     } 
     
     else if(isNaN(newBalance)){
-        alert ('Please enter a valid donation amount for Feni.');
+        alert ('Please enter a valid donation amount for Noakhali.');
     }
 
     else {
@@ -98,7 +98,7 @@ document.getElementById('btn3-donate-quotaMovement').addEventListener('click', f
     }
 
     else if(isNaN(newBalance)){
-        alert ('Please enter a valid donation amount for Feni.');
+        alert ('Please enter a valid donation amount for Quota Movement.');
     }
 
     

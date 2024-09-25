@@ -7,11 +7,17 @@ function donationTextStringtoNum(id) {
     return stringDonateVAlue;
 }
 
-function donationStringtoNum(id){
-    const donation=document.getElementById(id).value
-    const Flood_Qouta_Donation = parseFloat(donation);
 
-    return Flood_Qouta_Donation ;
+function donationStringtoNum(id){
+    const donation = document.getElementById(id).value.trim();  
+    const FloodQouta_Donation = parseFloat(donation);
+
+    if (isNaN(FloodQouta_Donation) || FloodQouta_Donation <= 0) {
+        alert('Please enter a valid donation amount (Numbers Only)');
+        return null;  
+    }
+
+    return FloodQouta_Donation;
 }
 
 

@@ -1,9 +1,4 @@
 
-// document.getElementById('btn-history').addEventListener('click', function(){
-//     window.location.href='./transaction.html';
-    
-// })
-
 
 //Noakhali Donation
 document.getElementById('btn1-donate-noakhali').addEventListener('click', function (event) {

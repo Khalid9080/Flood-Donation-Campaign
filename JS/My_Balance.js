@@ -12,9 +12,7 @@ document.getElementById('btn1-donate-noakhali').addEventListener('click', functi
         alert('Account balance of Noakhali is going to be empty.');
     } 
     
-    else if(isNaN(newBalance)){
-        alert ('Please enter a valid donation amount for Noakhali.');
-    }
+    
 
     else {
         newBalance==0
